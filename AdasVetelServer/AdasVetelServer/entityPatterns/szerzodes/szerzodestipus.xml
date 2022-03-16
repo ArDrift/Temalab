@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="SZERZODESTIPUS" OnlyPattern="true">
+  
+  <Patterns>   
+    <string>[iI]ngatlan</string>
+    <string>[iI]ngó</string>
+    <string>[iI]ngóság</string>
+    <string>[gG]épjármű</string>
+    <string>[hH]asznált [gG]épjármű</string>
+
+  </Patterns>
+
+  <ContextsBefore>   
+  </ContextsBefore>
+
+  <ContextsAfter>    
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="RESZLETEK">
+  <Patterns>    
+  </Patterns>
+  <ContextsBefore>
+  </ContextsBefore>
+  <ContextsAfter>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

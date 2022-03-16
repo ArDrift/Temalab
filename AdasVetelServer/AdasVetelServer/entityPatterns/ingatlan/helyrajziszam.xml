@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="HELYRAJZISZAM" OnlyPattern="false" PatternCaseInsensitive="false">
+  <Patterns>
+    <string>[0-9]+(/(([0-9]*)|([a-zA-Z]*)))*</string>
+  </Patterns>
+  <ContextsBefore>
+    <string>helyrajzi szám</string>
+    <string>belterület</string>
+  </ContextsBefore>
+  <ContextsAfter>
+    <string>helyrajzi szám alatti</string>
+    <string>helyrajzi szám alatt fekvő</string>
+    <string>helyrajzi szám alatt lévő</string>
+    <string>helyrajzi szám alatt található</string>
+    <string>helyrajzi szám alatt felvett</string>
+    <string>helyrajzi számú</string>
+    <string>helyrajzi szám alatt felvett</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

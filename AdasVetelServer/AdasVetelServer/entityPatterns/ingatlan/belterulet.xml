@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="BELTERULETE" OnlyPattern = "true" PatternCaseInsensitive="true">
+  
+  <Patterns>   
+    <string>belterület</string> 
+  </Patterns>
+
+  <ContextsBefore>    
+  </ContextsBefore>
+
+  <ContextsAfter>    
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

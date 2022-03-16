@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="HATARIDO">
+  <Patterns> 
+    <string>[0-9]{4} [0-9]{1,2} [0-9]{1,2}</string> 
+    <string>[0-9]{4} évi [0-9]{1,2} hó [0-9]{1,2}</string>
+    <string>[0-9]{4} év [0-9]{1,2} hó [0-9]{1,2}</string> 
+    <string>[0-9]{4} évi [0-9]{1,2} havi [0-9]{1,2}</string> 
+    <string>[0-9]{4} év [0-9]{1,2} havi [0-9]{1,2}</string> 
+    <string>[0-9]{4} év [0-9]{1,2} hónap [0-9]{1,2}</string> 
+    <string>[0-9]{4} évi [0-9]{1,2} hónap [0-9]{1,2}</string>    
+  </Patterns>
+  <ContextsBefore>
+    <string>(vevő )?köteles</string>
+    <string>(a )?teljesítés határideje</string>
+    <string>(a )?fizetés határideje</string>
+    <string>fizetési határidő</string>
+    <string>teljesítési határidő</string>
+    <string>határidő</string>
+  </ContextsBefore>
+  <ContextsAfter>
+    <string>ig átutalni</string>
+    <string>ig készpénzben kifizetni</string>
+    <string>ig kifizetni</string>
+    <string>ig </string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

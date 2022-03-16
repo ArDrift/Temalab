@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="CEGTIPUS" OnlyPattern="true">
+  
+  <Patterns>   
+    <string>[kK]orlátolt [fF]elelősségű [tT]ársaság</string>
+    <string>[kK][fF]tT]</string>
+    <string>[rR]észvénytársaság</string>
+    <string>[sS]zervezet</string>
+    <string>[kK]ereskedelmi [tT]ársaság</string>
+    <string>[kK]ereskedelmi [sS]zervezet</string> 
+  </Patterns>
+
+  <ContextsBefore>    
+  </ContextsBefore>
+
+  <ContextsAfter>    
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

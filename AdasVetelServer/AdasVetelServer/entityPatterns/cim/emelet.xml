@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="EMELET">
+  
+  <Patterns>   
+    <string>[0-9]{1,2}</string>
+    <string>[0-9]{1,2}/[0-9]{1,3}</string>
+  </Patterns>
+
+  <ContextsBefore>  
+    <string>emelet</string>
+    <string>@{HAZSZAM}</string>
+  </ContextsBefore>
+
+  <ContextsAfter>    
+     <string>emeleti</string>
+     <string>emelet( (alatti)|(alatt található))?</string>
+     <string>emeleten található</string>
+     <string>e </string>
+  </ContextsAfter>
+
+  <InvalidsBefore>  
+    <string>@{ORSZAG}</string>
+    <string>@{VAROS}</string> 
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+    <string>u </string>
+    <string>utca </string>
+  </InvalidsAfter>
+
+</EntityPattern>

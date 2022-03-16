@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="FORGALMISZAM" PatternCaseInsensitive="true">
+  <Patterns>  
+    <string>[A-Z0-9]{7}</string>  
+  </Patterns>
+  <ContextsBefore>
+    <string>forgalmi( )?szám</string>
+    <string>forgalmi azonosító</string>
+  </ContextsBefore>
+  <ContextsAfter>
+    <string>forgalmi( )?számú</string>
+    <string>forgalmi( )?azonosító számú</string>
+    <string>forgalmi( )?azonosítójú</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

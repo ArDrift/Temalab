@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="SZEREP" OnlyPattern="true" PatternCaseInsensitive="true">
+  <Patterns>
+    <string>vevő(k)?</string>
+    <string>eladó(k)?</string> 
+    <string>, és </string> 
+  </Patterns>
+  <ContextsBefore>
+    <string></string>
+  </ContextsBefore>
+  <ContextsAfter />
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

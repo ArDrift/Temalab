@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="SZAMLASZAM" PatternCaseInsensitive="true" OnlyPatter="false">
+  
+  <Patterns>
+    <string>(HU[0-9]{2} )?[0-9]{8} [0-9]{8}</string>
+    <string>(HU[0-9]{2} )?[0-9]{8} [0-9]{8} [0-9]{8}</string>
+    <string>(HU[0-9]{2})?[0-9]{16,24}</string>    
+  </Patterns>
+   
+  <ContextsBefore>
+    <string>számlaszám</string>
+    <string>IBAN szám</string>
+    <string>IBAN</string>
+    <string>bankszámlaszám</string>   
+  </ContextsBefore>
+
+  <ContextsAfter>
+    <string>számlaszámú</string>
+    <string>IBAN számú</string>    
+    <string>bankszámlaszámú</string>   
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

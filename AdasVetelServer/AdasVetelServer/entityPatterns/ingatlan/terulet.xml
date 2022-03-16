@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="TERULET">
+  
+  <Patterns>     
+    <string>[0-9]+( )?m2</string>
+    <string>[0-9]+( )?nm</string>
+    <string>[0-9]+( )?négyzetméter</string>
+    <string>[0-9]+( )?m^2</string>
+    <string>[0-9]+( )?h </string>
+    <string>[0-9]+( )?ha </string>
+    <string>[0-9]+( )?hektár</string>     
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>terület</string>
+    <string>alapterület</string>
+    <string>(telekkönyvi )?szemle szerint( összesen)?</string>    
+  </ContextsBefore>
+
+  <ContextsAfter>
+    <string>területű</string>
+    <string>alapterületű</string>
+    <string>területen fekvő</string>       
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

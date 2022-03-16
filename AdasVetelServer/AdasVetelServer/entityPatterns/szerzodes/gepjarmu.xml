@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="JARMUSZOVEG" OnlyPattern="true" PatternCaseInsensitive="true">
+  <Patterns>
+    <string>(?&lt;=továbbiakban Vevő között az alábbi feltételek)(.*)(?=Eladó eladja Vevő pedig megvásárolja)</string>
+    <string>(?&lt;=A jármű adatai)(.*)(?=Eladó adatai magánszemély esetében)</string>
+  </Patterns>
+  <ContextsBefore />
+  <ContextsAfter />
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

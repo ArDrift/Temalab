@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="SZOBAKSZAMA">
+  
+  <Patterns>   
+    <string>[0-9][0-9]</string> 
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>szobák száma</string>
+    <string>szobák</string>
+    <string>szobaszám</string>
+  </ContextsBefore>
+
+  <ContextsAfter>    
+    <string>szobás</string>
+    <string>szobát tartalmazó?</string>
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

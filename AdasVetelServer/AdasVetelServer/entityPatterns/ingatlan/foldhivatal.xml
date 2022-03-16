@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="FOLDHIVATAL">
+  <Patterns>
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)?( [fF]öldhivatal)?</string>
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)?</string>
+  </Patterns>
+  <ContextsBefore>
+    <string>földhivatal</string>
+    <string>donát képező , a</string>
+  </ContextsBefore>
+  <ContextsAfter>
+    <string>földhivatalnál nyilvántartott</string>
+    <string>földhivatalnál bejegyzett</string>
+    <string>földhivatalánál</string>
+     <string>földhivatalnál</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

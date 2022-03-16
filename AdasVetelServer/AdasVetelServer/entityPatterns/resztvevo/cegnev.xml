@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="CEGNEV" OnlyPattern="true">
+  
+  <Patterns>   
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)? [kK]orlátolt [fF]elelősségű [tT]ársaság</string>
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)? [kK][fF]tT]</string>
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)? [rR]észvénytársaság</string>
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)? [sS]zervezet</string>
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)? [kK]ereskedelmi [tT]ársaság</string>
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)? [kK]ereskedelmi [sS]zervezet</string> 
+  </Patterns>
+
+  <ContextsBefore>    
+  </ContextsBefore>
+
+  <ContextsAfter>    
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>
