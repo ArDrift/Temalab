@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="HASZNALTE" OnlyPattern="true" PatternCaseInsensitive="true">
+  <Patterns>    
+    <string>örökhagyó hagyatéka</string>
+    <string>egyedüli törvényes örököse</string>
+  </Patterns>
+  <ContextsBefore>
+  </ContextsBefore>
+  <ContextsAfter>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

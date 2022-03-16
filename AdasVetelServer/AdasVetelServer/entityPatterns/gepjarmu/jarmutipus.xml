@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="JARMUTIPUS" PatternCaseInsensitive="true" OnlyPattern="true">
+  <Patterns>    
+    <string>Buick</string>
+    <string>Cadillac</string>
+    <string>Chevrolet</string>
+    <string>Chrysler</string>
+    <string>Dodge</string>
+    <string>Ford</string>
+    <string>GEO</string>
+    <string>GMC</string>
+    <string>Jeep</string>
+    <string>Lincoln</string>
+    <string>Lingenfelter</string>
+    <string>Mercury</string>
+    <string>Saleen</string>
+    <string>Shelby</string>
+    <string>Tesla</string>
+    <string>Acura</string>
+    <string>Daihatsu</string>
+    <string>Dome</string>
+    <string>Honda</string>
+    <string>Infiniti</string>
+    <string>Isuzu</string>
+    <string>Lexus</string>
+    <string>Mazda</string>
+    <string>Mitsubishi</string>
+    <string>Nissan</string>
+    <string>Subaru</string>
+    <string>Suzuki</string>
+    <string>Toyota</string>
+    <string>Audi</string>
+    <string>BMW</string>
+    <string>Gumpert</string>
+    <string>Isdera</string>
+    <string>Mercedes(-Benz)?</string>
+    <string>Opel</string>
+    <string>Porsche</string>
+    <string>Smart</string>
+    <string>Volkswagen</string>
+    <string>Alfa Romeo</string>
+    <string>Ferrari</string>
+    <string>Fiat</string>
+    <string>Lancia</string>
+    <string>Lamborghini</string>
+    <string>Maserati</string>
+    <string>Pagani</string>
+    <string>Pininfarina</string>
+    <string>Qvale</string>
+    <string>Aston Martin</string>
+    <string>Bentley</string>
+    <string>Caterham Cars</string>
+    <string>Jaguar</string>
+    <string>Jensen</string>
+    <string>Land Rover</string>
+    <string>Lightning</string>
+    <string>Lister</string>
+    <string>Lotus</string>
+    <string>Mini</string>
+    <string>Morgan</string>
+    <string>Rolls-Royce</string>
+    <string>TVR</string>
+    <string>Vauxhall</string>
+    <string>Bugatti</string>
+    <string>Citroën</string>
+    <string>Citroen</string>
+    <string>Heuliez</string>
+    <string>Mega</string>
+    <string>Peugeot</string>
+    <string>Renault</string>
+    <string>Hyundai</string>
+    <string>Kia</string>
+    <string>Oullim</string>
+    <string>SsangYong</string>
+    <string>Koenigsegg</string>
+    <string>Volvo</string>
+    <string>Izs</string>
+    <string>AvtoVAZ</string>
+    <string>Lada</string>
+    <string>UAZ</string>
+    <string>Škoda</string>
+    <string>Skoda</string>
+    <string>Innotech</string>
+    <string>MTX</string>
+    <string>Tatra</string>
+    <string>Dacia</string>
+    <string>SEAT</string>
+    <string>Force Motors</string>
+    <string>Hindustan</string>
+    <string>Mahindra</string>
+    <string>Maruti Suzuki</string>
+    <string>San</string>
+    <string>Tata</string>
+    <string>Beijing Jeep</string>
+    <string>Hongqi</string>
+    <string>Holden</string>
+    <string>Proton</string>
+    <string>Bufori</string>
+    <string>Tofas</string>
+    <string>BRIXXON</string>
+    <string>ZAZ</string>
+    <string>Locus Pléthore</string>
+    <string>Mastretta</string>
+    <string>Rinspeed</string>
+    <string>Leblanc</string>
+    <string>Torrelaro</string>
+    <string>Oracle</string>
+    <string>Donkervoort</string>
+    <string>Tramontana</string>
+    <string>Zenvo</string>
+    <string>Rexer</string>
+    <string>FYK</string> 
+  </Patterns>
+  <ContextsBefore>
+  </ContextsBefore>
+  <ContextsAfter>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

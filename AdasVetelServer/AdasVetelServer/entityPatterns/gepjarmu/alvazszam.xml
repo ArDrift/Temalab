@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="ALVAZSZAM" PatternCaseInsensitive="true">
+  <Patterns>  
+    <string>[a-z0-9][a-z]{2}[a-z0-9]{10}[0-9]{4}</string>  
+  </Patterns>
+  <ContextsBefore>
+    <string>alvázszám</string>
+    <string>alváz( )?azonosító( szám)?</string>
+    <string>vin</string>
+  </ContextsBefore>
+  <ContextsAfter>
+    <string>alvázszámú</string>
+    <string>alváz( )?azonosító számú</string>
+    <string>alváz( )?azonosítójú</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

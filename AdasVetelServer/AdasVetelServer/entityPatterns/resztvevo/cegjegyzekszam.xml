@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="CEGJEGYZEKSZAM">
+  
+  <Patterns>
+    <string>[0-9]{2} [0-9]{2} [0-9]{6}</string>
+    <string>[0-9]{10}</string>
+  </Patterns>
+   
+  <ContextsBefore>
+    <string>cégjegyzékszám</string>
+    <string>cégjegyzék szám</string>
+    <string>cégjegyzék adóazonosító</string>
+  </ContextsBefore>
+
+  <ContextsAfter>
+    <string>cégjegyzékszámú</string>
+    <string>cégjegyzék számú</string>
+    <string>cégjegyzék adóazonosítójú</string>
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

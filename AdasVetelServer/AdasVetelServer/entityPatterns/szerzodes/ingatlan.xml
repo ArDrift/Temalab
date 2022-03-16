@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="INGATLANSZOVEG" OnlyPattern="true" PatternCaseInsensitive="true">
+  <Patterns>
+    <string>(?&lt;=Eladó eladja , Vevők pedig megvásárolják)(.*)(?=Felek megállapodnak)</string>
+    <string>(?&lt;=Eladó eladja , Vevő pedig megvásárolja)(.*)(?=Felek megállapodnak)</string>
+     <string>(?&lt;=Eladó eladja , Vevő pedig megvásárolja)(.*)(?= Kelt )</string>
+  </Patterns>
+  <ContextsBefore />
+  <ContextsAfter />
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="ORSZAG">
+  
+  <Patterns>   
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+ország</string> 
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+ia</string>
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>lakcím</string>
+    <string>cím</string>
+    <string>lakhely</string>
+    <string>ország</string>
+    <string>állandó lakhely</string>
+    <string>tartózkodási hely</string>
+    <string>székhely</string>
+  </ContextsBefore>
+
+  <ContextsAfter>    
+    <string>[0-9]{4} [a-zíéáűúőöüó]+ [a-zíéáűúőöüó]+ u</string>
+    <string>[0-9]{4} [a-zíéáűúőöüó]+ [a-zíéáűúőöüó]+ utca</string>
+    <string>[a-zíéáűúőöüó]+ [a-zíéáűúőöüó]+ u</string>
+    <string>[a-zíéáűúőöüó]+ [a-zíéáűúőöüó]+ utca</string>
+    <string>, [0-9]{4} [a-zíéáűúőöüó]+ , [a-zíéáűúőöüó]+ u</string>
+    <string>, [0-9]{4} [a-zíéáűúőöüó]+ , [a-zíéáűúőöüó]+ utca</string>
+    <string>, [a-zíéáűúőöüó]+ , [a-zíéáűúőöüó]+ u</string>
+    <string>, [a-zíéáűúőöüó]+ , [a-zíéáűúőöüó]+ utca</string>
+    <string>irányítószám</string>
+    <string>város</string>
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+    <string>[0-9]{4}</string>
+    <string> város</string>
+    <string>@{IRANYITOSZAM}</string>
+    <string>@{VAROS}</string>
+  </InvalidsBefore>
+
+  <InvalidsAfter>   
+    <string>@{UTCA}</string>
+  </InvalidsAfter>
+
+</EntityPattern>
+

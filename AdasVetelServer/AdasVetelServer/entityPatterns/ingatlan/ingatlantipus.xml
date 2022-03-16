@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="INGATLANTIPUS" OnlyPattern ="true">
+  
+  <Patterns>   
+    <string>[tT]ársasházi lakás</string>
+    <string>[lL]akóparki lakás</string>
+    <string>[lL]akás</string> 
+    <string>[cC]saládi ház</string>
+    <string>[iI]kerház</string>
+    <string>[sS]orház</string>
+    <string>[pP]enthouse</string>
+    <string>[tT]ároló</string>
+    <string>[mM]űhely</string>
+    <string>[gG]arázs</string>
+    <string>[pP]anel lakás</string>
+    <string>[tT]égla lakás</string>
+    <string>[iI]roda</string>
+    <string>[üÜ]zlet</string>
+    <string>[iI]pari csarnok</string>
+    <string>[iI]par( )?terület</string>
+    <string>[iI]par( )?telep</string>
+    <string>[mM]ezőgazdasági csarnok</string>
+    <string>[fF]eldolgozó( )?üzem</string>
+    <string>[iI]nput anyagtárolás</string>
+    <string>[Mm]ezőgazdasági bértároló</string>
+    <string>[sS]zántó</string>
+    <string>[rR]ét</string>
+    <string>[lL]egelő</string>
+    <string>[eE]rdő</string>
+    <string>[gG]yümölcsös</string>
+    <string>[sS]zőlő</string>
+    <string>[hH]alastó</string>
+  </Patterns>
+
+  <ContextsBefore> 
+  </ContextsBefore>
+
+  <ContextsAfter>    
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

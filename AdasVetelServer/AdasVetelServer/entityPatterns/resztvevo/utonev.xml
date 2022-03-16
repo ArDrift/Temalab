@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="UTONEV">
+  
+  <Patterns>   
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+</string> 
+  </Patterns>
+
+  <ContextsBefore>
+    <string>keresztnév( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)?</string>
+    <string>utónév( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)?</string>
+    <string>keresztneve( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)?</string>
+    <string>utóneve( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)?</string>     
+    <string>@{CSALADINEV}</string>
+  </ContextsBefore>
+
+  <ContextsAfter>   
+  </ContextsAfter>
+
+  <InvalidsBefore>
+    <string>vezetéknév és keresztnév</string>
+    <string>családi és utónév</string>
+    <string>vezetékneve és keresztneve</string>
+    <string>családi és utóneve</string> 
+    <string>anyja( születési)? családi és utóneve( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+)?</string>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

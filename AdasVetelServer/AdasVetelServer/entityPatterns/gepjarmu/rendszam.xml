@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="RENDSZAM" PatternCaseInsensitive="true">
+  <Patterns>    
+    <string>[A-Z]{3}( )?[0-9]{3}</string>
+  </Patterns>
+  <ContextsBefore>
+    <string>(forgalmi )?rendszám( azonosító)?</string>
+  </ContextsBefore>
+  <ContextsAfter>
+    <string>(forgalmi )?rendszám azonosítójú</string>
+    <string>(forgalmi )?rendszámú</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

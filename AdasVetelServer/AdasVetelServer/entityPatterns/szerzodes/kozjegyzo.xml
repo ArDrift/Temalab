@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="KOZJEGYZO">
+  
+  <Patterns>   
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+</string> 
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+ [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+</string>    
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>ügyvéd</string>    
+    <string>közjegyző</string>
+  </ContextsBefore>
+
+  <ContextsAfter>   
+    <string>ügyvédi iroda</string>
+    <string>közjegyző iroda</string>   
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="SZULETESIHELY">
+  
+  <Patterns>   
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+</string> 
+  </Patterns>
+
+  <ContextsBefore>  
+    <string>születési hely</string>
+    <string>születési hely és idő</string>
+    <string>születési hely és dátum</string>  
+  </ContextsBefore>
+
+  <ContextsAfter>  
+    <string>@{SZULETESIDATUM}</string>   
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

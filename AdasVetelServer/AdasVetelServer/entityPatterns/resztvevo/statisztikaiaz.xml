@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="STATISZTIKAIAZ">
+  
+  <Patterns>
+    <string>[0-9]{8} [0-9]{4} [0-9]{3} [0-9]{2}</string>
+    <string>[0-9]{17}</string>
+  </Patterns>
+   
+  <ContextsBefore>
+    <string>statisztikai számjel</string>
+    <string>statisztikai szám</string>
+    <string>statisztikai azonosító</string>
+    <string>statisztikai jel</string>
+  </ContextsBefore>
+
+  <ContextsAfter>
+  <string>statisztikai számjelű</string>
+    <string>statisztikai számú</string>
+    <string>statisztikai azonosítójú</string>
+    <string>statisztikai jelű</string>
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

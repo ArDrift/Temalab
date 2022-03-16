@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="SZEMELYISZAM" OnlyPattern="false" PatternCaseInsensitive="false">
+  <Patterns>
+    <string>[0-9]{6}[A-Za-z]{2}</string>
+  </Patterns>
+  <ContextsBefore>
+    <string>személyi szám</string>
+    <string>személyi azonosító</string>
+    <string>személyi azonosító szám</string>
+    <string>személyi igazolvány szám</string>
+    <string>személyi ig szám</string>
+    <string>személyi ig</string>
+    <string>személyi igazolvány azonosító</string>
+    <string>személy az</string>
+    <string>személyazonosító</string>
+    <string>személy azonosító</string>
+    <string>személyi igazolvány( ,)?</string>
+    <string> , személyi igazolvány szám</string>
+  </ContextsBefore>
+  <ContextsAfter>
+    <string>személyi számú</string>
+    <string>személyi azonosítójú</string>
+    <string>személyi azonosító számú</string>
+    <string>személyi igazolvány számú</string>
+    <string>személyi ig számú</string>
+    <string>személy az</string>
+    <string>személyazonosítójú</string>
+    <string>személy azonosítójú</string>
+    <string>személyi igazolványú</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

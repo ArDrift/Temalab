@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="KELTDATUM">
+  
+  <Patterns>   
+    <string>[0-9]{4} [0-9]{1,2} [0-9]{1,2}</string> 
+    <string>[0-9]{4} évi [0-9]{1,2} hó [0-9]{1,2}</string>
+    <string>[0-9]{4} év [0-9]{1,2} hó [0-9]{1,2}</string> 
+    <string>[0-9]{4} évi [0-9]{1,2} havi [0-9]{1,2}</string> 
+    <string>[0-9]{4} év [0-9]{1,2} havi [0-9]{1,2}</string> 
+    <string>[0-9]{4} év [0-9]{1,2} hónap [0-9]{1,2}</string> 
+    <string>[0-9]{4} évi [0-9]{1,2} hónap [0-9]{1,2}</string> 
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>kelt( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( ,)?)?</string>
+    <string>keltezés( [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+( ,)?)?</string>
+    <string>kelt dátum</string>
+    <string>dátum</string>
+    <string>keltezés dátuma</string>    
+  </ContextsBefore>
+
+  <ContextsAfter>    
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+  </InvalidsAfter>
+
+</EntityPattern>

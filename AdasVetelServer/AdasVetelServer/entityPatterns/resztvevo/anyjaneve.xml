@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="ANYJANEVE">
+  
+  <Patterns>      
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+ [A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+</string> 
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>anyja leánykori neve</string>
+    <string>anyja neve</string> 
+    <string>anyja születési családi és utóneve</string>      
+  </ContextsBefore>
+
+  <ContextsAfter>
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+  </InvalidsBefore>
+
+  <InvalidsAfter>     
+  </InvalidsAfter>
+
+</EntityPattern>

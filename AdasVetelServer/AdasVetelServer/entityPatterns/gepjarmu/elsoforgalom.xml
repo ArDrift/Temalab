@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="ELSOFORGALOM">
+  <Patterns>  
+    <string>[0-9]+</string>  
+  </Patterns>
+  <ContextsBefore>
+        <string>első forgalomba helyezésének éve</string>
+        <string>első forgalomba helyezés éve</string>
+        <string>első forgalomba helyezés</string>
+        <string>első forgalomba helyezése</string>     
+  </ContextsBefore>
+  <ContextsAfter>
+     <string>ben helyezték forgalomba</string>
+        <string>évben helyezték forgalomba</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>

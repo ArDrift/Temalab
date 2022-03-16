@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="VAROS">
+  
+  <Patterns>   
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+</string> 
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>lakcím</string>
+    <string> cím</string>
+    <string>lakhely</string>
+    <string>város</string>
+    <string>állandó lakhely</string>
+    <string>tartózkodási hely</string>
+    <string>székhely</string>
+    <string>[0-9]{4}</string>
+    <string>lakcím [0-9]{4}</string>
+    <string>cím [0-9]{4}</string>
+    <string>lakhely [0-9]{4}</string>
+    <string>ország [0-9]{4}</string>
+    <string>állandó lakhely [0-9]{4}</string>
+    <string>székhely [0-9]{4}</string>
+    <string>tartózkodási hely [0-9]{4}</string>
+    <string>természetben</string>
+    <string>természetben [0-9]{4}</string>
+    <string>, @{IRANYITOSZAM}</string> 
+    <string>@{ORSZAG}</string> 
+  </ContextsBefore>
+
+  <ContextsAfter>  
+    <string>(, )?[a-zíéáűúőöüó]+ u</string>
+    <string>(, )?[a-zíéáűúőöüó]+ utca</string>
+    <string>(, )?[a-zíéáűúőöüó]+ ut</string>
+    <string>(, )?[a-zíéáűúőöüó]+ út</string>
+    <string>@{UTCA}</string> 
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+    <string> ország</string>
+    <string>@{UTCA}</string>
+  </InvalidsBefore>
+
+  <InvalidsAfter>  
+    <string>[0-9]{4}</string>
+    <string>, [0-9]{4}</string>
+    <string>u </string>
+    <string>utca </string>  
+    <string>út </string>  
+    <string>ut </string>  
+  </InvalidsAfter>
+
+</EntityPattern>
+	

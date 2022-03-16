@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="UTCA">
+  
+  <Patterns>   
+    <string>[A-ZÁÉÖÜŰŐÓÍ][a-zíéáűúőöüó]+ ((út)|(utca)|u|(ut)|(köz))</string>
+  </Patterns>
+
+  <ContextsBefore>    
+    <string>@{IRANYITOSZAM} @{VAROS}</string>
+    <string>@{VAROS}</string>
+  </ContextsBefore>
+
+  <ContextsAfter>    
+    <string>@{HAZSZAM}</string>  
+  </ContextsAfter>
+
+  <InvalidsBefore>   
+    <string> város</string> 
+    <string>@{HAZSZAM}</string> 
+  </InvalidsBefore>
+
+  <InvalidsAfter>    
+    <string>szám alatti</string> 
+  </InvalidsAfter>
+
+</EntityPattern>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityPattern Tag="MOTORSZAM" PatternCaseInsensitive="true">
+  <Patterns>  
+    <string>[A-Z0-9]{19}</string>  
+  </Patterns>
+  <ContextsBefore>
+    <string>motor( )?szám</string>
+    <string>motor( )?kód</string>
+  </ContextsBefore>
+  <ContextsAfter>
+   <string>motor( )?számú</string>
+    <string>motor( )?kódú</string>
+  </ContextsAfter>
+  <InvalidsBefore />
+  <InvalidsAfter />
+</EntityPattern>
