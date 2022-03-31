@@ -2,9 +2,26 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    ViewData["LoginTitle"] = "Log in to server";
+    ViewData["Username"] = "Username";
+    ViewData["Password"] = "Password";
+    ViewData["LoginBtn"] = "Login";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <button>Login</button>
+    <h1 class="display-6">@ViewData["LoginTitle"]</h1>
+
+        <form>
+            <div class="mb-4">
+                <label class="form-label" for="username">@ViewData["Username"]</label>
+                <input class="form-control" id="username" type="text" name="username" autocomplete="username" autofocus="autofocus" autocapitalize="none" autocorrect="off">
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label" for="password">@ViewData["Password"]</label>
+                <input class="form-control" id="password" type="password" name="password" autocomplete="current-password">
+            </div>
+
+            <a asp-action="Login"><button class="btn btn-primary">@ViewData["LoginBtn"]</button></a>
+        </form>
 </div>
