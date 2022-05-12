@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Windows.Forms;
+using AdasVetelServer.analyzing.ner;
 
 namespace AdasVetelServer.bert
 {
@@ -65,6 +66,7 @@ namespace AdasVetelServer.bert
                 return new List<NerResult>();
             }
             string startup = Application.StartupPath;
+            
             ServerLogger.Instance.writeLog($"{startup}\\pyScripts\\ner_controller.py");
             processStartInfo.Arguments = string.Format("\"{0}\" {1} \"{2}\" \"{3}\" \"{4}\"",               
                 $"{startup}\\pyScripts\\ner_controller.py",
@@ -73,15 +75,50 @@ namespace AdasVetelServer.bert
                 text,
                 $"{startup}\\pyScripts\\script_output.json");
 
+        
+
             using (System.Diagnostics.Process process = System.Diagnostics.Process.Start(processStartInfo))
             {
+                /*
                 string stderr = process.StandardError.ReadToEnd();
                 if (!stderr.Equals(""))
                 {
                     ServerLogger.Instance.writeLog(stderr);
                     return new List<NerResult>();
                 }
-                string result = File.ReadAllText($"{startup}\\pyScripts\\script_output.json", Encoding.UTF8);                
+                */
+                
+                string result = File.ReadAllText($"{startup}\\pyScripts\\script_output.json", Encoding.UTF8);    
+                
+                var model = new Bert(@"C:\Users\varga\source\repos\Temalab\AdasVetelServer\AdasVetelServer\pyScripts\model_save\vocab.txt",
+                                @"C:\Users\varga\source\repos\Temalab\AdasVetelServer\AdasVetelServer\analyzing\ner\model\model-token-class.onnx");
+
+                var (tokens, probability) = model.Predict(text);
+                var options = new JsonSerializerOptions
+                {
+                    IncludeFields = true,
+                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRanges.All)
+                };
+
+                using (TextWriter tw = new StreamWriter($"{startup}\\pyScripts\\test.json"))
+                {
+                    var resultList = new List<(string, float)>();
+                    for (int i = 0; i < tokens.Count; i++)
+                    {
+                        resultList.Add((tokens[i], probability[i]));
+                        
+                    }
+                        tw.WriteLine(JsonSerializer.Serialize(resultList, options));
+
+                    
+
+                }
+
+                
+                
+                ServerLogger.Instance.writeLog("Itt vagyok");
+
+
                 return JsonSerializer.Deserialize<List<NerResult>>(result);
 
             }

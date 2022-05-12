@@ -26,7 +26,7 @@ namespace AdasVetelServer.logic
         private List<NerResult> nerResults;
         public string formatData(string data)
         {
-            data = data.Replace(".", " ");
+            //data = data.Replace(".", " ");
             data = data.Replace("-", " ");
             data = data.Replace(",", " ,");
             data = data.Replace(":", " ");
